@@ -1,14 +1,16 @@
 /*
-This After Effects script adds a basic non-destructive CAMERA SHAKE setup to an after effects comp using the following steps.
+This After Effects script adds a basic non-destructive CAMERA SHAKE setup to an After Effects comp using the following steps:
+
 - Adds a null layer
 - Parents selected layer/comp to null
 - Adds Slider Control effect and parents it to Wiggle expression
 - Creates three keyframes with default value of 2.0 at middle keyframe
 
 If there's already a null layer with the shake effect present, the script
-will instead add three new keyframes begtinning at the playhead location
+will instead add three new keyframes beginning at the playhead location
 in order to add a second SHAKE to the composition.
 */
+
 function cameraHit() {
     //get Comp
     var comp = app.project.activeItem;
