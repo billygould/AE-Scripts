@@ -1,3 +1,9 @@
+/*
+Programatically isolates and exports all layers in the current composition
+one at a time, resulting in a number of exports equal to the number of 
+layers, each containing just one solo'd layer.
+*/
+
 alert("Click OK to execute layer by layer.");
 
 var comp = app.project.item(1);
